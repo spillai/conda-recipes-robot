@@ -17,5 +17,5 @@ requirements:
         - numpy
 
 about:
-    home: https://github.com/lcm-proj/lcm
-    license: GNU LGPL-2.1
+    home: https://github.com/RobotLocomotion/libbot.git
+    license: GNU LGPL-3.0
