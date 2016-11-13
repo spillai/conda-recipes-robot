@@ -1,0 +1,21 @@
+# libbot
+package:
+    name: libbot
+    version: 2
+
+source:
+    git_url: https://github.com/RobotLocomotion/libbot.git
+    git_branch: master
+  
+requirements:
+    build:
+        - cmake
+        - numpy
+        - python
+    run:
+        - python
+        - numpy
+
+about:
+    home: https://github.com/lcm-proj/lcm
+    license: GNU LGPL-2.1
