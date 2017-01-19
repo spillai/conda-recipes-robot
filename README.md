@@ -6,6 +6,7 @@ License: MIT
 
 See my [anaconda repo](https://anaconda.org/s_pillai/repo?type=all) for more packages. 
 
+---
 ### Install miniconda and add to PATH
 Install anaconda if you don't have it (instructions here for OS X)
 ```sh
@@ -14,6 +15,7 @@ sh Miniconda-latest-MacOSX-x86_64.sh -b -p $HOME/anaconda
 export PATH=$HOME/anaconda/bin:$PATH
 ```
 
+---
 ### Install the packages
 Create a new environment.
 ```sh
@@ -34,8 +36,8 @@ conda install --file https://raw.githubusercontent.com/spillai/pybot/master/cond
 pip install -i https://pypi.anaconda.org/s_pillai/simple pybot
 ```
 
-## Pre-built packages
 ---
+### Pre-built packages
 - [lcm](https://github.com/lcm-proj/lcm)
 - [libbot](https://github.com/RobotLocomotion/libbot)
 - [pybot](https://github.com/spillai/pybot)
