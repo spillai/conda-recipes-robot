@@ -1,13 +1,42 @@
 # conda-recipes-robot
 Building/Packaging Robot Libraries with conda
 
+Author: [Sudeep Pillai](http://people.csail.mit.edu/spillai)<br>
+License: MIT
+
+See my [anaconda repo](https://anaconda.org/s_pillai/repo?type=all) for more packages. 
+
+### Install miniconda and add to PATH
+Install anaconda if you don't have it (instructions here for OS X)
+```sh
+wget http://repo.continuum.io/miniconda/Miniconda-latest-MacOSX-x86_64.sh
+sh Miniconda-latest-MacOSX-x86_64.sh -b -p $HOME/anaconda
+export PATH=$HOME/anaconda/bin:$PATH
+```
+
+### Install the packages
+Create a new environment.
+```sh
+conda create -n robot_env python=2
+source activate robot_env
+```
+
+Install the packages
+```bash
+conda install -c s_pillai pygtsam=3.2.1 -y
+conda install -c s_pillai lcm=1.3.1 -y
+conda install -c s_pillai libbot=2 -y
+```
+
+Install [pybot](https://github.com/spillai/pybot)
+```bash
+conda install --file https://raw.githubusercontent.com/spillai/pybot/master/conda_requirements.txt
+pip install -i https://pypi.anaconda.org/s_pillai/simple pybot
+```
+
 ## Pre-built packages
 ---
-- [LCM](https://github.com/lcm-proj/lcm)
-- [Libbot](https://github.com/RobotLocomotion/libbot)
-- [Pybot](https://github.com/spillai/pybot)
-
-http://people.csail.mit.edu/spillai/code/linux-64/lcm-1.3.1-py27_0.tar.bz2  
-http://people.csail.mit.edu/spillai/code/linux-64/libbot-2-py27_0.tar.bz2  
-http://people.csail.mit.edu/spillai/code/linux-64/pybot-0.1.tar.gz  
-
+- [lcm](https://github.com/lcm-proj/lcm)
+- [libbot](https://github.com/RobotLocomotion/libbot)
+- [pybot](https://github.com/spillai/pybot)
+- [pygtsam](https://github.com/spillai/conda-recipes-slam/tree/master/pygtsam)
