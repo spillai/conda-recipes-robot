@@ -7,16 +7,14 @@ License: MIT
 See my [anaconda repo](https://anaconda.org/s_pillai/repo?type=all) for more packages. 
 
 ---
-### Install miniconda and add to PATH
-Install anaconda if you don't have it (instructions here for OS X)
+### Install
+Install miniconda if you don't have it and add to path
 ```sh
-wget http://repo.continuum.io/miniconda/Miniconda-latest-MacOSX-x86_64.sh
-sh Miniconda-latest-MacOSX-x86_64.sh -b -p $HOME/anaconda
+wget https://repo.continuum.io/miniconda/Miniconda2-latest-Linux-x86_64.sh
+sh Miniconda2-latest-Linux-x86_64.sh -b -p $HOME/anaconda
 export PATH=$HOME/anaconda/bin:$PATH
 ```
 
----
-### Install the packages
 Create a new environment.
 ```sh
 conda create -n robot_env python=2
