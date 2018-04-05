@@ -4,6 +4,8 @@ Building/Packaging Robot Libraries with conda
 Author: [Sudeep Pillai](http://people.csail.mit.edu/spillai)<br>
 License: MIT
 
+[![Build Status](https://travis-ci.org/spillai/conda-recipes-robot.svg?branch=master)](https://travis-ci.org/spillai/conda-recipes-robot)
+
 See my [anaconda repo](https://anaconda.org/s_pillai/repo?type=all) for more packages. 
 
 ---

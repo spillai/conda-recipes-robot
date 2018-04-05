@@ -60,8 +60,7 @@ before_install:
 
 install:
   - source activate test-environment
-  - conda build tools/conda.recipe
-  - conda install pybot --use-local
+  - ./build_all.sh
 
 script:
-  - python -c 'import pybot'
+  - echo $TRAVIS_PYTHON_VERSION
