@@ -12,9 +12,11 @@ requirements:
         - cmake
         - numpy
         - python
+        - lcm
     run:
         - python
         - numpy
+        - lcm
 
 about:
     home: https://github.com/RobotLocomotion/libbot.git
