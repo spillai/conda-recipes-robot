@@ -50,8 +50,7 @@ before_install:
 
 install:
   - source activate test-environment
-  - conda build lcm --python $TRAVIS_PYTHON_VERSION
-  - conda install lcm --use-local -y
+  - ./build_all.sh
 
 script:
   - python -c 'import lcm'
