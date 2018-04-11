@@ -23,3 +23,4 @@ requirements:
 about:
     home: https://github.com/lcm-proj/lcm
     license: GNU LGPL-2.1
+    summary: Lightweight Communications and Marshalling (LCM)
